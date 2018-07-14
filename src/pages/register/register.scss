@@ -1,0 +1,48 @@
+page-register {
+
+    p {
+        text-align: center;
+        color: #666666;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    ion-item {
+        padding-left: 10px !important;
+        margin-bottom: 10px !important;
+        opacity: 1;
+        font-size: 0.9em;
+
+        &.item-wp.item-block {
+            .item-inner {
+                border-bottom-color: #dedede;
+            }
+        }
+
+        &.item-input-has-focus,
+        &.input-has-focus {
+            .item-inner {
+                border-bottom-color: #dc9bde !important;
+                box-shadow: inset 0 -1px 0 0 #dc9bde !important;
+            }
+        }
+
+        ion-label, .input-cover {
+            color: #666666 !important;
+        }
+
+        ion-input {
+            color: #dc9bde;
+            padding: 0;
+
+            .text-input-wp {
+                border: none !important;
+            }
+        }
+    }
+
+    .botao {
+        margin-top: 10px;
+        border-radius: 30px;
+    }
+}

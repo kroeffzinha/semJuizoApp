@@ -1,0 +1,37 @@
+page-tips {
+    h2 {
+        font-size: 1.9rem;
+        line-height: 1.4;
+        color: #663366;
+    }
+
+    h3, p, li {
+        color: #666666;
+    }
+
+    hr {
+        margin-top: 1.9rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+        line-height: 1.4;
+
+        &.first {
+            margin-top: 1.6rem;
+        }
+    }
+
+    a {
+        color: #dc9bde;
+    }
+
+    p, li {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+}

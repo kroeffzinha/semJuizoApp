@@ -1,0 +1,30 @@
+page-recipes {
+    p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        color: #666666;
+    }
+
+    .cardItem {
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ffffff;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:focus, &:hover, &:active {
+            border-bottom-color: #a46aa5;
+            box-shadow: none;
+        }
+
+        ion-card-title {
+            font-size: 1.2em;
+            color: #a46aa5;
+        }
+    }
+
+    ion-infinite-scroll {
+        margin-top: 20px !important;
+    }
+}

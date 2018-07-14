@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="medium">
+    <ion-title>Recuperar senha</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>Informe seu e-mail cadastrado conosco.</p>
+
+  <ion-item>
+    <ion-label><ion-icon ios="ios-person" md="md-person"></ion-icon> E-mail: </ion-label>
+    <ion-input type="text" #usuario></ion-input>
+  </ion-item>
+
+  <button ion-button block class="botao" (click)="recuperar()">Recuperar</button>
+
+</ion-content>
+  

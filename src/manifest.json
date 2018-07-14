@@ -1,0 +1,13 @@
+{
+  "name": "Sem Juizo App",
+  "short_name": "SemJuizo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/imgs/logo.png",
+    "sizes": "140x140",
+    "type": "image/png"
+  }],
+  "background_color": "#dc9bde",
+  "theme_color": "#663366"
+}
