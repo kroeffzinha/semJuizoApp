@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="medium">
+    <ion-title>Cadastro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>Informe seus dados e crie uma conta.</p>
+
+  <ion-item>
+    <ion-label><ion-icon ios="ios-person" md="md-person"></ion-icon> E-mail: </ion-label>
+    <ion-input type="text" #usuario></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label><ion-icon ios="ios-lock" md="md-lock"></ion-icon> Senha: </ion-label>
+    <ion-input type="password" #senha></ion-input>
+  </ion-item>
+
+  <button ion-button block class="botao" (click)="registrar()">Cadastrar</button>
+
+</ion-content>

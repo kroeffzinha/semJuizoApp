@@ -1,0 +1,56 @@
+page-post {
+    .imgTopo {
+        width: 100%;
+    }
+
+    .postTitle {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        color: #663366;
+        margin: 15px 0 8px;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .postContent {
+        margin: 0 0 2px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 1.4rem;
+        color: #666666;
+        line-height: 1.4;
+    }
+
+    hr {
+        margin: 2.0rem 16px 1.6rem;
+    }
+
+    .paddingLateral {
+        padding: 0 16px;
+        color: #367835;
+
+        .categoria {
+            display: inline;
+            color: #a46aa5;
+            margin-left: 5px;
+        }
+    }
+
+    .boldTitle {
+        font-size: inherit;
+        font-weight: bold;
+        color: #666666;
+        margin-bottom: 5px;
+
+        &.categoriaTitle {
+            margin: 16px 0 20px;
+        }
+    }
+
+    .areaTags {
+        flex-grow: 0;
+        width: auto;
+        flex-basis: auto;
+    }
+}

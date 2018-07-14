@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="medium">
+    <ion-title *ngIf="post">
+      Receita acessada
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngIf="post">
+    <div>
+      <img [src]="image" class="imgTopo" />
+    </div>
+    <div [innerHtml]="post.title.rendered" class="postTitle" padding></div>
+    <p [innerHtml]="post.content.rendered" class="postContent" padding></p>
+    <hr>
+  
+    <ion-row class="paddingLateral">
+      <ion-col>
+        <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>
+        {{post.date.split("T")[0] | date: 'd MMM, y'}}
+      </ion-col>
+      <ion-col text-right>
+        <ion-icon ios="ios-person" md="md-person"></ion-icon>
+        {{author}}
+      </ion-col>
+    </ion-row>
+
+    <p class="boldTitle paddingLateral">Tag(s):</p>
+    <ion-grid class="paddingLateral">
+      <ion-row>
+        <ion-col *ngFor="let tag of tags" class="areaTags">
+          <ion-badge>{{tag.name}}</ion-badge>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="boldTitle categoriaTitle paddingLateral">
+      Categoria:
+      <div *ngFor="let category of categories" class="categoria">
+        {{category.name}}
+      </div>
+    </div>
+  </div>
+
+</ion-content>

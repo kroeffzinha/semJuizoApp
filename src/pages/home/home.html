@@ -1,0 +1,18 @@
+
+<ion-content padding>
+  <img class="logo" src="assets/imgs/logo.png" />
+
+  <ion-item>
+    <ion-label><ion-icon ios="ios-person" md="md-person"></ion-icon> E-mail: </ion-label>
+    <ion-input type="text" #usuario></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label><ion-icon ios="ios-lock" md="md-lock"></ion-icon> Senha: </ion-label>
+    <ion-input type="password" #senha></ion-input>
+  </ion-item>
+
+  <button ion-button block class="botao" (click)="entrar()">Entrar</button>
+  <button ion-button block class="botao" (click)="entrarVisitante()" color="secondary">Entrar como Visitante</button>
+  <p class="link_bt"><a (click)="cadastrar()">Criar uma conta</a></p>
+  <p class="link_bt"><a (click)="recuperar()">Esqueci minha senha</a></p>
+</ion-content>

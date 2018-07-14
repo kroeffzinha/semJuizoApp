@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="medium">
+    <ion-title>
+      Receitas
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon class="toolbar-icon" name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <p>Confira abaixo algumas receitas para te ajudar nos primeiros dias pós extração do(s) dente(s).</p>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" refreshingSpinner="circles"></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-card *ngFor="let post of posts" class="cardItem">
+    <ion-card-content (click)="postTagged($event, post)">
+      <ion-card-title [innerHtml]="post.title.rendered"></ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-infinite-scroll [enabled]="morePagesAvailable" (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Carregando..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
